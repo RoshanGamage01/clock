@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color: rgb(3, 16, 35);
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 13em;
+    background-size: cover;
+    transition: 0.7s ease-in-out;
+}
+
+.main .quotes{
+    width: 450px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.297);
+    border-radius: 10px;
+}
+
+.main .quotes .desc{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.main .time-more .time .moment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setting{
+    padding: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.setting:hover{
+    background-color: rgba(255, 255, 255, 0.245);
+    border-radius: 50%;
+}
+
+.setting:active{
+    background-color: rgba(255, 255, 255, 0.456);
+    border-radius: 50%;
+}
+
+.main .time-more{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main .time-more .time{
+    width: 430px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.297);
+    border-radius: 10px;
+}
+.main .time-more .time .clock{
+    margin: 20px 0;
+}
+
+.main .time-more .time .clock .clock-time{
+    font-size: 100px;
+}
+
+.main .time-more .btn-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #f0f9fc59;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px){
+    .main .time-more .btn-more{
+        display: none;
+    }
+    .main{
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .main .quotes{
+        width: 350px;
+    }
+    .main .time-more .time{
+        width: 340px
+    }
+    .main .time-more .time .clock .clock-time{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .main .time-more .btn-more{
+        display: none;
+    }
+    .main{
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .main .quotes{
+        width: 350px;
+    }
+    .main .time-more .time{
+        width: 340px
+    }
+    .main .time-more .time .clock .clock-time{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 912px){
+    .main .time-more .btn-more{
+        display: none;
+    }
+    .main{
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .main .quotes{
+        width: 500px;
+    }
+    .main .time-more .time{
+        width: 500px
+    }
+    .main .time-more .time .clock .clock-time{
+        font-size: 6em;
+    }
+}
